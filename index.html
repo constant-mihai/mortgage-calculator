@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <title>Calculator</title>
+  <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #4CAF50;} /* Green */
+</style>
+</head>
+<body>
+
+<p>
+    Calculate the monthly payment.
+</p>
+
+<div id="input-rate">
+<label for="rate">Anual Rate (%):</label>
+<input type="number" step="0.01" id="rate" name="rate">
+
+</div>
+<div id="input-no-mpayments">
+<label for="no-mpayments">Number of monthly payments:</label>
+<input type="number" id="no-mpayments" name="no-mpayments">
+</div>
+
+</div>
+<div id="input-principal">
+<label for="principal">Principal credit:</label>
+<input type="number" id="principal" name="principal">
+</div>
+
+<button id="mpayment-button" name="mpayment-button"
+    class="button button1" onclick="calculateMonthlyPayment()" >Calculate</button>
+
+</div>
+
+<div id="output-mpayments">
+<label for="output-mpayments">Monthly payments: <label>
+</div>
+<div id="output-total-interest-paid">
+<label for="output-total-interest-paid">Total interest paid: <label>
+</div>
+<div id="output-cumulative-interest-paid">
+<label for="output-cumulative-interest-paid">Cumulative interest paid: <label>
+</div>
+
+</div>
+<div id="output-chart">
+</div>
+
+
+<script src="mortgage.js"></script>
+
+
+</body>
+</html>
